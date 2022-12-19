@@ -10,7 +10,14 @@ document.addEventListener('keydown', (e) => {
     snare.currentTime = 0;
     snare.play();
   } else if (e.key === "f") {
-    chord.loop = true;
+    chord.loop = false;
+    chord.currentTime = 0;
+    chord.play();
+  }
+});
+
+chord.addEventListener("ended", (e) => {
+  if (e.key === "a") {
     chord.currentTime = 0;
     chord.play();
   }
@@ -18,7 +25,6 @@ document.addEventListener('keydown', (e) => {
 
 document.addEventListener("keyup", (e) => {
   if (e.key === 'f') {
-    chord.loop = false;
     chord.pause();
   }
 });
