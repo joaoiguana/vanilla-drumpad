@@ -10,23 +10,34 @@
 <body>
   <div class="container">
     <h1>JG Vanilla Drumpad</h1>
-    <div class="row-one">
-      <button>
-        V
-        <audio src="./audio/Kick.wav" id="kick"></audio>
-      </button>
-      <button>
-        J
-        <audio src="./audio/Snare.wav" id="snare"></audio>
-      </button>
-      <button>
-        F
-        <audio src="./audio/Chord.wav" id="chord"></audio>
-      </button>
+    <div class="drum-pad-container">
+      <div class="row">
+        <div class="drum-pad" data-key="V">V</div>
+        <div class="drum-pad" data-key="J">J</div>
+        <div class="drum-pad" data-key="F">F</div>
+      </div>
+      <div class="row">
+        <div class="drum-pad" data-key="I">I</div>
+        <div class="drum-pad" data-key="K">K</div>
+        <div class="drum-pad" data-key="E">E</div>
+      </div>
+      <div class="row">
+        <div class="drum-pad" data-key="G">G</div>
+        <div class="drum-pad" data-key="H">H</div>
+        <div class="drum-pad" data-key="B">B</div>
+      </div>
     </div>
-    <div class="row-two"></div>
-    <div class="row-three"></div>
+    <audio src="./audio/Kick.wav" id="kick"></audio>
+    <audio src="./audio/Snare.wav" id="snare"></audio>
+    <audio src="./audio/Chord.wav" id="chord"></audio>
+    <audio src="./audio/Hihat_Closed.wav" id="hat-closed"></audio>
+    <audio src="./audio/Hihat_Open.wav" id="hat-open"></audio>
+    <audio src="./audio/Cymbal.wav" id="crash"></audio>
+    <audio src="./audio/Tom_Medium.wav" id="tom-mid"></audio>
+    <audio src="./audio/Tom_High.wav" id="tom-high"></audio>
+    <audio src="./audio/Bass_Fmin.wav" id="bass"></audio>
   </div>
   <script src="main.js"></script>
+  <script src="select.js"></script>
 </body>
 </html>
