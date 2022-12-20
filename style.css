@@ -3,14 +3,19 @@
 body {
   background-color: #BBCBCB;
   font-family: 'Martian Mono', monospace;
-  /* height: 100vh; */
-  /* margin: 0; */
-
+  margin: 0;
+  text-align: center;
 }
 
-.row{
+.drum-pad-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .row{
+  display: flex;
+} */
 
 .drum-pad {
   border: 2px solid black;
